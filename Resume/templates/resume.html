@@ -8,6 +8,7 @@
 </head>
 <body>
   <header>
+    <img src="{{url_for('static', filename='Profile_picture.jpg')}}" alt="photo" height="200" width="150">
     <h1>Ryan Tackett</h1>
     <ul class="contact-info">
       <li><a href="mailto:rtackett2000@gmail.com">rtackett2000@gmail.com</a></li>
@@ -19,7 +20,7 @@
   <main>
     <section class="summary">
       <h2>Summary</h2>
-        <p>I am a hard working dedicated IT security student looking to get their foot in the door. I have had several help desk internships prior to attending college and am looking to broaden my horizons and expand my knowledge while working with great people.<br><br>I have experience working with:<br><br>Network Development and Maintenance<br>Linux and Windows Server Management<br>Group policy management<br>Burpsuite<br>Curl<br>Network, directory, and file enumeration<br>Encryption standards<br>Metasploit<br>Sqli<br>xss<br>Java<br>Python</p>
+        <p>Highly motivated and results-oriented Penetration Tester with experience in identifying and exploiting vulnerabilities across web applications, networks, and systems. Proven ability to deliver comprehensive penetration testing engagements, identify critical security risks, and develop clear remediation plans. Passionate about staying ahead of the latest security threats and contributing to a culture of proactive security.</p>
     </section>
 
     <section class="expertise">
@@ -54,7 +55,6 @@
           <li>Printer maintenance & repair</li>
           <li>Overhead-Projector repair</li>
           <li>Running Network Wire In New bus garage</li>
-          <h3></h3>
           </ul>
       </div>
       <div class="job-entry">
@@ -73,96 +73,165 @@
 
     <section class="education">
       <h2>Education</h2>
-      <div class="education-entry">
-          <h3>Northern Michigan University</h3>
-        <h4>Graduated with Batchlors</h4>
-        <span class="education-date">2021 - 2024</span>
+      <div class="education-boxes">
+        <div class="education-entry">
+            <h3><a href="https://nmu.edu/bulletin/information-assurancecyber-defense-major-8">Northern Michigan University</a></h3>
+          <h4>Graduated with Batchlors</h4>
+          <span class="education-date">2021 - 2024</span>
+        </div>
+        <div class="education-entry">
+          <h3><a href="https://www.davenport.edu/academics/areas/technology/bachelors-cyber-defense">Davenport University</a></h3>
+          <h4>Transfered</h4>
+          <span class="education-date">2019 – 2021</span>
+        </div>
+        <div class="education-entry">
+          <h3><a href="https://branch-isd.org/bacc/cnt/">Branch area career center</a></h3>
+          <h4>Graduated</h4>
+          <span class="education-date">2017 – 2019</span>
+        </div>
+        <div class="education-entry">
+          <h3><a href="https://www.bronsonschools.org/">Bronson Jr/Sr High School</a></h3>
+          <h4>Graduated</h4>
+          <span class="education-date">2015 – 2019</span>
+        </div>
       </div>
-      <div class="education-entry">
-        <h3>Davenport University</h3>
-        <h4>Transfered</h4>
-        <span class="education-date">2019 – 2021</span>
-      </div>
-      <div class="education-entry">
-        <h3>Branch area career center</h3>
-        <h4>Graduated</h4>
-        <span class="education-date">2017 – 2019</span>
-      </div>
-      <div class="education-entry">
-        <h3>Bronson Jr/Sr High School</h3>
-        <h4>Graduated</h4>
-        <span class="education-date">2015 – 2019</span>
-      </div> 
     </section>
 
     <section class="projects">
       <h2>Projects</h2>
-      <div class="project-entry">
-      <h3>Titanic Passenger Data Website</h3>
-        <img src="project-image.jpg" alt="Project screenshot">
-        <p>This project displays a profitency of python web development and MySQL Database management. I use this to display a bar-graph of information about The Titanic passengers.</p>
-        <ul class="Project Skills">
-          <li>Bar Chart Used to Communicate Complex Data Relationships.</li>
-          <li>MySQL Database Creation & Management</li>
-          <li>Imput & File Validation</li>
-        </ul>
-        <a href="https://github.com/RyanT-git/Titanic_Data_Project.git">View on GitHub</a>
-       </div>
-       <div class="project-entry">
-        <h3>WAPT Scanning Website</h3>
-        <img src="project-image.jpg" alt="Project screenshot">
-        <p>Website to help in scanning Bugbounty website targets notifying me about possible vulnerabilities and a page for making reporting easy after sucessful vulnerability identification and confirming validity.</p>
-        <ul class="tech-stack">
-          <li>Directory Scanning & IDOR Identification </li>
-          <li>XSS Scanning</li>
-          <li>PII Scanning Using REGEX</li>
-          <li>CVE Reporting Tool</li>
-        </ul>
-        <a href="https://github.com/your-username/project-repo">View on GitHub</a>
-       </div>
-      <div class="project-entry">
-        <h3>Python Hashed Password Cracker</h3>
-        <img src="project-image.jpg" alt="Project screenshot">
-        <p>CLI Based Python Password Cracking Tool</p>
-        <ul class="tech-stack">
-          <li>Hash Identification</li>
-          <li>Dictionary Attack </li>
-          <li>Python Programming</li>
-        </ul>
-        <a href="https://github.com/your-username/project-repo">View on GitHub</a>
-       </div>
+      <div class="projects-entries">
+        <div class="project-entry">
+          <div class="project-image">
+            <img src="{{url_for('static', filename='Titanic_website.png')}}" alt="Project screenshot">
+          </div>
+          <div class="project-name">
+            <h3>Titanic Passenger Data Website</h3>
+          </div>
+          <div class="project-paragraph">
+            <p>This project displays a profitency of python web development and MySQL Database management. I use this to display a bar-graph of information about The Titanic passengers.</p>
+          </div>
+            <ul class="tech-stack">
+              <li>Bar Chart Used to Communicate Complex Data Relationships.</li>
+              <li>MySQL Database Creation & Management</li>
+              <li>Imput & File Validation</li>
+            </ul>
+          <div class="project-link">
+            <a href="https://github.com/RyanT-git/Titanic_Data_Project.git">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-entry">
+          <div class="project-image">
+            <img src="{{url_for('static', filename='WAPT_website.png')}}" alt="Project screenshot">
+          </div>
+          <div class="project-name">
+            <h3>WAPT Scanning Website</h3>
+          </div>
+          <div class="project-paragraph">
+            <p>Website to help in scanning Bugbounty website targets notifying me about possible vulnerabilities and a page for making reporting easy after sucessful vulnerability identification and confirming validity.</p>
+          </div>
+            <ul class="tech-stack">
+              <li>Directory Scanning & IDOR Identification </li>
+              <li>XSS Scanning</li>
+              <li>PII Scanning Using REGEX</li>
+              <li>CVE Reporting Tool</li>
+            </ul>
+          <div class="project-link">
+            <a href="https://github.com/RyanT-git/WAPT-website-">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-entry">
+          <!--<div class="project-image">
+            <img src="{{url_for('static', filename='')}}" alt="Project screenshot">
+          </div>-->
+          <div class="project-name">
+            <h3>Python Hashed Password Cracker</h3>
+          </div>
+          <div class="project-paragraph">
+            <p>CLI based password hash identifying and cracking tool.</p>
+          </div>
+            <ul class="tech-stack">
+              <li>Hash Identification</li>
+              <li>Dictionary Attack </li>
+              <li>Python Programming</li>
+            </ul>
+          <div class="project-link">
+            <a href="https://github.com/RyanT-git/python/blob/main/breakhash.py">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-entry">
+          <div class="project-image">
+            <img src="https://imgs.search.brave.com/9CJ2HFaSRy6n0AcgLU03Ul5Eus05WZ1DMPQHxEeTcQc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtZ2xvYmFsLndl/YnNpdGUtZmlsZXMu/Y29tLzYyNDQ5ZTA4/MTYyOTU1NDg1Yjgz/NTAzMS82MjVkOGUy/OGY5NzM0NTFiYzE1/NTMzMWNfNjI0YTNj/YmE1M2IwYWIxYWUw/MGRhMWQxX2NvZGVw/YXRoX2xvZ28ucG5n" alt="Project screenshot" style="width: 150px;height: 150px;">  
+          </div>
+          <div class="project-name">
+            <h3>Facebook Codepath Pentesting Labs</h3>
+          </div>
+          <div class="project-paragraph">
+            <p>Codepath Web App Pentesting course and labs that focused on Cross-Site Scripting, CSRF Cross-Site Request Forgery, SQL Injection, in multiple hands on timed and point based CTF competition</p>
+          </div>
+            <ul class="tech-stack">
+              <li>CTF Labs</li>
+              <li>Red Team Vulnerability Research</li>
+              <li>Blue Team Defense Fundamentals</li>
+            </ul>
+          <div class="project-link">
+            <a href="/codepath">More Information</a>
+          </div>
+        </div>
+        <div class="project-entry">
+          <div class="project-image">
+            <img src="{{url_for('static', filename='W2l.png')}}" alt="Project screenshot">
+          </div>
+          <div class="project-name">
+            <h3>Wireshark to Google Maps location</h3>
+          </div>
+          <div class="project-paragraph">
+            <p>Project in python to take Wireshark packet and visualy return a location on google maps for where it origonated</p>
+          </div>
+          <ul class="tech-stack">
+            <li>Wireshark</li>
+            <li>Geolitecity Database</li>
+            <li>Python</li>
+          </ul>
+          <div class="project-link">
+            <a href="https://github.com/RyanT-git/codepath_Homework_repo">View on GitHub</a>
+          </div>
+        </div>
       </div>
-       <div class="project-entry">
-        <h3>Facebook Codepath Pentesting Labs</h3>
-        <img src="project-image.jpg" alt="Project screenshot">
-        <p>Codepath Web App Pentesting course and labs that focused on Cross-Site Scripting, CSRF Cross-Site Request Forgery, SQL Injection, in multiple hands on timed and point based CTF competition</p>
-        <ul class="tech-stack">
-          <li>CTF Labs</li>
-          <li>Red Team Vulnerability Research</li>
-          <li>Blue Team Defense Fundamentals</li>
-        </ul>
-      <a href="https://github.com/RyanT-git/codepath_Homework_repo">View on GitHub</a>
-       </div>
+    </section>
+    <div class="bottom-lists">
+      <section class="certifications">
+      <h2>Certifications</h2>
+        <div class="certifications-lists">
+          <div class="certifications-list">
+            <dl>
+              <dd>CompTIA A+</dd>
+              <dd>Credential ID: COMP001021259523</dd>
+              <dd>Issued Jun 2018 – Expires Jun 2021</dd>
+            </dl>
+          </div>
+          <div class="certifications-list">
+            <dl>
+              <dd>Windows Operating System Fundamentals</dd>
+              <dd>Microsoft Technology Associate (MTA)</dd>
+              <dd>Issued May 2019 – Expires May 2024</dd>
+            </dl>
+          </div>
+        </div>
       </section>
 
-    <section class="certifications">
-      <h2>Certifications</h2>
-      <ul class="cert-list">
-        <li>[Certification Name] - [Issuing Organization], [Date]</li>
-        <li>[Certification Name] - [Issuing Organization], [Date]</li>
-        <li>[Certification Name] - [Issuing Organization], [Date]</li>
-      </ul>
-    </section>
-
-    <section class="awards">
-      <h2>Awards & Recognitions</h2>
-      <ul class="award-list">
-        <li>First Place at BPA State for Network Development - Mar 2019</li>
-        <li>[Award Name] - [Awarding Organization], [Date]</li>
-        <li>[Award Name] - [Awarding Organization], [Date]</li>
-      </ul>
-    </section>
-
+      <section class="awards">
+        <h2>Awards & Recognitions</h2>
+        <div class="awards-lists">
+          <div class="award-list">
+            <dl>
+              <dd>First Place at State for Network Design </dd>
+              <dd>Business Professionals of America</dd>
+              <dd>March 2019</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>
